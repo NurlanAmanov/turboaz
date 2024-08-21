@@ -7,130 +7,149 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="stylee.css">
     <title>Turbo az</title>
 </head>
 
-<body>
+<body class="bg-[#F6F6F8]">
     <main>
 
-    
-        <div class="header">
 
-            <div class="desktop">
-               <div class="dekstop-menu">
-                <a href="#">
-                    <h1>Turbo.az</h1>
-    
+        <div
+            class="header text-lg uppercase  font-bold  no-underline font-arial flex p-3.5  items-center justify-center bg-white">
+
+            <div class="desktop flex items-center justify-between w-full gap-2.5  ">
+                <div class="dekstop-menu  flex items-center justify-around flex-row w-1/5 gap-2.5 ">
+                    <a href="#">
+                        <h1 class="text-lg uppercase  font-bold  no-underline font-arial text-[#ca1016]">Turbo.az</h1>
+
+                    </a>
+                    <hr class=" h-6 w-5 m-0.5 bg-[#f7f8fa]">
+                    <a href="#" class="m-0.5 text-[#8d94ad]">
+                        Bina.az
+                    </a>
+                    <hr class="  m-0.5 h-6 w-5 bg-[#f7f8fa]">
+                    <a href="#" class="m-0.5 text-[#8d94ad]">
+                        Tap.az
+                    </a>
+
+                </div>
+                <div class="yerlesdir w-7 h-7   bg-cover ">
+                    <div class="plus "> </div>
+                </div>
+
+            </div>
+            <div class="mobil flex items-center justify-between w-full">
+                <a href="#" class="m-0.5 text-[#8d94ad]">
+                    <h1 class=" mx-4 text-lg uppercase  font-bold  no-underline font-arial text-[#ca1016]">Turbo.az</h1>
+
                 </a>
-                <hr class="ara">
-                <a href="#">
+                <hr class=" h-6 w-0.5 m-0.5 bg-[#f7f8fa]">
+                <a href="#" class="m-0.5 text-[#8d94ad]">
                     Bina.az
                 </a>
-                <hr class="ara">
-                <a href="#">
+                <hr class=" h-6 w-0.5 m-0.5 bg-[#f7f8fa]">
+                <a href="#" class="m-0.5 text-[#8d94ad]">
                     Tap.az
                 </a>
+                <div class="yerlesdir  bg-no-repeat bg-cover ml-4  w-7 h-7 rounded-50 ">
 
-               </div>
-               <div class="yerlesdir"> 
-            <div class="plus"> </div>
-               </div>
-                
-            </div>
-            <div class="mobil"> 
-            <a href="#">
-                <h1>Turbo.az</h1>
-
-            </a>
-            <hr class="ara">
-            <a href="#">
-                Bina.az
-            </a>
-            <hr class="ara">
-            <a href="#">
-                Tap.az
-            </a>
-            <div class="yerlesdir">
-
+                </div>
             </div>
         </div>
-    </div>
-        <div class="filtir">
-            <form>
-                <span> <i class="fa-solid fa-car"></i>Bütün markalar</span>
-                <select>
-                    <option value="">G 63 AMG</option>
-                    <option value="">Tundra</option>
-                    <option value="">S 600</option>
-                   
+        <div class="filtir  flex items-center justify-center mt-4 bg-[#F6F6F8]  flex-col">
+            <form class="w-11/12 bg-white px-4 shadow-[#0000000a]  py-2  rounded-t-xl rounded-bl-xl rounded-br-xl ">
+                <span class="ml-px font-arial  text-[#212c3a] text-sm"> <i
+                        class="fa-solid fa-car text-[#ca1016] text-lg mx-2"></i>Bütün markalar</span>
+                <select class="m-0.5 border-none outline-none  text-[#B1B5C7]">
+                    <option class="mx-2 border-none outline-none text-[#B1B5C7]" value="">G 63 AMG</option>
+                    <option class="mx-2 border-none outline-none  text-[#B1B5C7]" value="">Tundra</option>
+                    <option class="mx-2 border-none outline-none text-[#B1B5C7] " value=" ">S 600</option>
+
                 </select>
-                <div class="filtir-2">
-                    <span> <img src="img/filter.png" alt=""></i>Filtirlər</span>
+                <div
+                    class="filtir-2 flex border-t-2 border-t-zinc shadow-[#0000000a] flex-auto flex-row justify-start  ">
+                    <img src="img/filter.png" class="my-2  w-5 object-cover mr-2.5 rotate-90" alt="">
+                    <p class="text-base my-2 "> Filtirlər</p>
                 </div>
 
             </form>
-            <div class="moto">
-                <span>Moto </span>
-                <img src="https://turbo.azstatic.com/assets/mobile/icon-arrow--right--gray-9e53d7f3ad0a5f4cd3ae5664f46954c300fc46fffda7fe4a3a8b3c081a7c32e7.svg"
+            <div
+                class="moto  h-10 flex m-4 bg-white rounded-t-xl rounded-bl-xl rounded-br-xl items-center w-11/12    flex-row justify-between ">
+                <span class="ml-2">Moto </span>
+                <img class="w-4 mx-3.5  h-4 "
+                    src="https://turbo.azstatic.com/assets/mobile/icon-arrow--right--gray-9e53d7f3ad0a5f4cd3ae5664f46954c300fc46fffda7fe4a3a8b3c081a7c32e7.svg"
                     alt="">
             </div>
         </div>
-        <div class="banner">
-            <img src="img/banner.jpg" alt="">
+        <div class="banner class w-full">
+            <img src="img/banner.jpg" class="w-full  h-1/2 object-cover	" alt="">
         </div>
-        <div id="container">
+        sad
+        <div id="container" class=" flex items-center justify-center bg-[#eee] flex-row w-full py-7 gap-4 flex-wrap ">
 
         </div>
 
 
 
     </main>
-    <footer>
+    <footer class=" pb-20  w-full bg-[#f6f7fa] px-4  border-t-indigo-[##eceff6]">
         <div class="footercontent">
-            <div class="footer1">
+            <div class="footer1 text-[#8d94ad] my-4 flex items-start justify-center flex-col">
                 <a href="#">Qaydalar</a>
                 <a href="#">İstifadəçi razılaşması</a>
                 <a href="#">Reklam yerləşdirin</a>
                 <a href="#">Sifarişli avtomobil alan alıcı üçün tövsiyələr</a>
 
             </div>
-            <div class="footer2">
-                <h5>Dəstək xidməti</h5>
+            <div class="footer2 text-[#8d94ad] my-2 mb-6 flex items-start justify-center flex-col">
+                <h5 class="text-[#212c3a]">Dəstək xidməti</h5>
                 <a href="#">(012) 505-77-55</a>
                 <a href="#">İş saatları — Həftə içi: 09:00-19:00 | Şənbə: 09:00-13:00</a>
 
             </div>
         </div>
     </footer>
-    <div class="menu-bar">
-        <div class="menu-content">
-            <ul id="menu">
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        <br>Əsas</a>
+    <div class="menu-bar m-auto flex w-full">
+        <div class=" p-2 menu-content border-t-2 border-t-zinc bg-white w-full h-20 fixed right-0 left-0 p-1.5 bottom-0">
+            <ul id="menu" class="flex items-center justify-around">
+                <li class="flex  flex-col text-center items-center">
+                    <a href="#" class="mx-1.5 text-lg  whitespace-nowrap tracking-widest text-[#8d94ad]">
+                        <i class="fa-solid text-lg  text-center fa-house"></i>
+                        <br>Əsas
+                    </a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-heart like"></i> <br>
-                        Seçilmişlər</a>
+                <li class="flex  text-center flex-col items-center">
+                    <a href="#" class=" text-lg  text-[#8d94ad]">
+                        <i class="fa-solid text-lg  fa-heart"></i>
+                        <br>Seçilmişlər
+                    </a>
                 </li>
-                <div class="yeni-elan">
-                    <img src="img/plus.svg" alt="">
-                    <span>Yeni elan</span>
-                </div>
-
-                <li>
-                    <a href="#"><i class="fa-regular fa-circle-user like"></i> <br>
-                        Kabinet</a>
+                <li class="flex flex-col  text-center items-center relative">
+                    <div class="yeni-elan flex flex-col items-center">
+                        <img src="img/plus.svg" class="w-9 object-cover mx-1.5 transform -translate-y-5" alt="">
+                        <span class="text-[#8d94ad] text-lg  mt-1 transform -translate-y-1">Yeni elan</span>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-bars like"></i><br>Daha çox</a>
+                <li class="flex  flex-col text-center items-center">
+                    <a href="#" class="text-lg  text-[#8d94ad]">
+                        <i class="fa-regular text-lg fa-circle-user"></i>
+                        <br>Kabinet
+                    </a>
+                </li>
+                <li class="flex flex-col text-center items-center">
+                    <a href="#" class=" text-lg  text-[#8d94ad]">
+                        <i class="fa-solid fa-bars  text-lg  "></i>
+                        <br>Daha çox
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
+
+
     <script>
         const model = ["G 63 AMG", "Tundra", "S 600", "CLA 250", "Camry", "2115", "X5", "Sportage", "X7", "LX 600", "Song Plus", "V 220", "Passat CC", "Astra", "Santa Fe", "Fusion", "Accord", "IS 300", "G 63 AMG", "Santa Fe", "LX 500d", "Camry", "ES 250", "NX 300", "Corolla", "X6", "2106", "RAV4", "M3", "2107", "M4", "Prius V", "Priora", "Prius V"]
         const tarix = ["Bakı, 03.07.2023 23:12", "Bakı, 25.06.2023 16:39", "Bakı, 10.07.2023 23:12", "Bakı, Bugün 12:22", "Bakı, 02.07.2023 13:10", "Bakı, 08.07.2023 10:00", "Bakı, 06.07.2023 12:10", "Bakı, 03.07.2023 09:20", "Bakı, 25.06.2023 00:20", "Bakı, 06.07.2023 12:20", "Bakı, 05.07.2023 11:20", "Bakı, 04.07.2023 12:30", "Bakı, dünən 23:42", "Bakı, 07.07.2023 09:20", "Bakı, 01.07.2023 12:20", "Bakı, 05.07.2023 18:12", "Bakı, 06.07.2023 18:12", "Bakı, 11.07.2023 11:02", "Bakı, 06.07.2023 14:11", "Bakı, 07.07.2023 18:12", "Bakı, 10.07.2023 21:12", "Bakı, 08.07.2023 15:12", "Bakı, 06.07.2023 18:15", "Bakı, 12.07.2023 13:05", "Bakı, 10.07.2023 21:12", "Bakı, 10.07.2023 11:22", "Bakı, bugün 11:04", "Bakı, 29.06.2023 23:12", "Bakı, 29.06.2023 23:12", "Bakı, 29.06.2023 23:12", "Bakı,Dünən 13:52", "Bakı, 12.06.2023 12:43", "Bakı,23.06.2023 16:43", "Sumqayıt, Dünən 12:43"]
@@ -140,17 +159,18 @@
         const qiymet = ["285 000 $", "43 500 $", "85 000 $", "22 000 $", "40 940 $", "8 500 AZN", "26 000 $", "67 900 AZN", "130 500 $", "175 500 $", "36 900 $", "44 900 $", "26 700 AZN", "11 200 AZN", "34 500 AZN", "29 500 AZN", "223 900 $", "18 700 AZN", "220 000 $", "25 500 AZN", "158 500 $", "68 500 AZN", "158 500 $", "32 600 $", "23 900 $", "99 500 $", "4 600 AZN", "45 000 $", "49 500 $", "6 800 AZN", "53 500 AZN", "6 800 AZN", "12 800 AZN", "5 500 AZN"]
         let cards = document.querySelector(".cards")
         for (let i = 0; i < model.length; i++) {
-            container.innerHTML += ` <div class="cards">
-                            <img  src="${img[i]}" alt="Masinlar"/>
-                            <h1>${qiymet[i]}</h1>
-                              <h2>${marka[i]}</h2>
-                                <h3>${il[i]}</h3>
-                                <h4>${tarix[i]}</h4>
+            container.innerHTML += ` <div class="cards w-40 h-36 min-h-72 rounded-xl bg-white border-gray-600 pb-3.5">
+                            <img class="w-full  object-cover h-36"  src="${img[i]}" alt="Masinlar"/>
+                            <h1 class="text-base  font-semibold  m-2">${qiymet[i]}</h1>
+                              <h2 class="m-2 text-sm">${marka[i]}</h2>
+                                <h3 class="m-2 text-sm">${il[i]}</h3>
+                                <h4 class="p-0.5 text-sm text-sm text-gray-500"> ${tarix[i]}</h4>
                                 </div>
             `
         }
 
     </script>
+
 </body>
 
 </html>
