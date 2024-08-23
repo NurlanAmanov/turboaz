@@ -10,7 +10,7 @@ const data = [
       currency: "AZN",
       year: "2005",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F11%2F11%2F19%2F41%2F5f34c8eb-5138-4d0c-b78e-8c817d98aa5f%2F52522_Mu2ZZs1LqQkRDJpgK-R_xw.jpg",
       ],
@@ -46,7 +46,7 @@ const data = [
       currency: "AZN",
       year: "2007",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2022%2F12%2F22%2F10%2F26%2F59%2F9f754715-d306-49f2-b2e2-60ab36f771e6%2F80870_wrsWRRQ-A4ySXmcF4jOpXg.jpg",
       ],
@@ -64,7 +64,7 @@ const data = [
       currency: "USD",
       year: "2008",
       credit: true,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2022%2F09%2F02%2F17%2F28%2F48%2Fa0bc3142-1854-48f9-9c81-ff7d7010c1ae%2F59959_CCv7BAr0Tlz1x7lQiFAsQA.jpg",
       ],
@@ -82,7 +82,7 @@ const data = [
       currency: "AZN",
       year: "2022",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2022%2F09%2F19%2F17%2F33%2F45%2F027df0e9-c5df-46a1-8428-2a356ee17d45%2F44832_yspkMx-Q-VQPULaAOI_MSw.jpg",
       ],
@@ -100,7 +100,7 @@ const data = [
       currency: "AZN",
       year: "2005",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2022%2F04%2F19%2F15%2F59%2F38%2F716b705f-e564-4d55-995a-7762e6881f4c%2F5883_vLXDlraa-zAkIkuXUdl05w.jpg",
       ],
@@ -118,7 +118,7 @@ const data = [
       currency: "AZN",
       year: "2015",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2023%2F01%2F29%2F15%2F18%2F37%2F46fbb03a-0cd9-4409-bbc6-03023e588329%2F67200_jmTFoB8S36kCqexBERvuhA.jpg",
       ],
@@ -136,7 +136,7 @@ const data = [
       currency: "AZN",
       year: "2017",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2023%2F01%2F29%2F18%2F08%2F03%2F20fc5e31-1f10-4b83-ade8-2d513db1c746%2F67209_O84rpgQMDkok2-nwStiHpg.jpg",
       ],
@@ -154,7 +154,7 @@ const data = [
       currency: "USD",
       year: "2020",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2022%2F11%2F11%2F19%2F52%2F19%2F56291fd3-453f-426f-a911-3ca4f2e26362%2F17663_stveq78AA4WtPo3oyvVbHA.jpg",
       ],
@@ -172,7 +172,7 @@ const data = [
       currency: "AZN",
       year: "2015",
       credit: true,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2023%2F01%2F19%2F14%2F59%2F27%2F530eae46-d07d-4abc-bacb-de36d3088f0f%2F64922_Iu72BGd2C_OFe3WxVk-qGQ.jpg",
       ],
@@ -190,7 +190,7 @@ const data = [
       currency: "AZN",
       year: "2005",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2022%2F10%2F20%2F20%2F19%2F37%2Ff0d40936-67d4-47b2-8f88-39e95c546ae3%2F57379_yzPNLn7TAwj6RDByWKgvOA.jpg",
       ],
@@ -424,7 +424,7 @@ const data = [
       currency: "AZN",
       year: "2000",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2023%2F01%2F30%2F18%2F47%2F06%2F92202a2f-1f27-453f-a37e-c03b988d1187%2F49755_qZklKVXHkSfjWtrA_iHn_A.jpg",
       ],
@@ -442,7 +442,7 @@ const data = [
       currency: "AZN",
       year: "2023",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2023%2F01%2F31%2F16%2F42%2F46%2Fb60abf3c-aff7-450d-b793-bf93ceff3a06%2F15660_QvgVQpBtt9j4-9bpnj5N8Q.jpg",
       ],
@@ -532,7 +532,7 @@ const data = [
       currency: "USD",
       year: "2017",
       credit: true,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2022%2F12%2F28%2F15%2F40%2F48%2Fb18d5c9e-58d7-4e2e-9bba-1c29cbce9940%2F61425_r8Og48iy5Jr9GvOTtAnnyQ.jpg",
       ],
@@ -550,7 +550,7 @@ const data = [
       currency: "AZN",
       year: "2009",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F31%2F21%2F26%2F41%2Fa8168d7c-d02e-495f-8f01-69fcdc5e3e03%2F11997_tG1Qr36Aqkf171mt0oZG7Q.jpg",
       ],
@@ -568,7 +568,7 @@ const data = [
       currency: "AZN",
       year: "2001",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F02%2F01%2F00%2F51%2F52%2F5638fb6b-7249-4f46-abd0-aa1efc451203%2F15643_AMLCTJrCWlvBJ6SXlF8fpg.jpg",
       ],
@@ -586,7 +586,7 @@ const data = [
       currency: "AZN",
       year: "1997",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F02%2F01%2F00%2F50%2F33%2Fd092e0d3-04c1-4af7-a730-c240c35f5f7d%2F15649_bymZBq9rqL0M4TLjYtXR4A.jpg",
       ],
@@ -604,7 +604,7 @@ const data = [
       currency: "AZN",
       year: "2006",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F30%2F20%2F06%2F23%2F76cef983-6b3b-47b8-a58d-dfb3cf469b5d%2F75221_xUr0C4Z--56j6RIijVBWVA.jpg",
       ],
@@ -640,7 +640,7 @@ const data = [
       currency: "AZN",
       year: "2016",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F31%2F20%2F36%2F16%2Ffb49abb0-fdf6-4595-87b0-27bdd3c3d226%2F12009_q1FoKTnpPA3uE3dtRcZZUA.jpg",
       ],
@@ -676,7 +676,7 @@ const data = [
       currency: "AZN",
       year: "2000",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F21%2F15%2F25%2F13%2F02798cb4-1129-4629-93af-b6dccb089966%2F78886_JqpeH6a5xab8QHW6E7dXKg.jpg",
       ],
@@ -712,7 +712,7 @@ const data = [
       currency: "EUR",
       year: "2023",
       credit: true,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2022%2F11%2F24%2F15%2F43%2F27%2Ff071d240-bc97-412c-a94a-bd3d676a51b2%2F23828_xAXUnAgmfcF8tuCOsfkz8Q.jpg",
       ],
@@ -730,7 +730,7 @@ const data = [
       currency: "AZN",
       year: "1938",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2022%2F10%2F27%2F14%2F39%2F36%2F923ef17d-e1f9-4149-9e94-f925cf7661b7%2F42871_umKrn-lPv1BfkzuD5arziA.jpg",
       ],
@@ -766,7 +766,7 @@ const data = [
       currency: "AZN",
       year: "2007",
       credit: false,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F30%2F20%2F01%2F36%2Fb8325e8f-b0b1-4423-8163-59ab513c0445%2F49759_qjtKYlmSfvuA_6JFNFa8AQ.jpg",
       ],
@@ -784,7 +784,7 @@ const data = [
       currency: "USD",
       year: "2019",
       credit: true,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2021%2F02%2F04%2F11%2F55%2F52%2Ff3ddd4c9-1600-4d6d-b34f-5853f3c1ff71%2F19864_8RtK5APm1te6PSMZ3o2MLg.jpg",
       ],
@@ -802,7 +802,7 @@ const data = [
       currency: "EUR",
       year: "2020",
       credit: true,
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2022%2F12%2F31%2F11%2F03%2F22%2Fb774f69d-3dc8-45d8-bf74-7fe3b1e68012%2F16508_ZEyGXYpx-MxvNSzE3M3s7A.jpg",
       ],
@@ -821,7 +821,7 @@ const data = [
       year: "2020",
       credit: true,
 
-      barter: false,
+      engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/full/2023%2F01%2F31%2F13%2F41%2F14%2F30be4e7e-c9ac-455d-8616-616f096d6da7%2F71593_f9yNl7lW4FO-spgOift6dw.jpg",
       ],
@@ -833,9 +833,9 @@ const data = [
         for (let i = 0; i < data.length; i++) {
             container.innerHTML += `  <div class="card overflow-hidden w-44 o h-38 min-h-72 rounded-xl bg-white  pb-3.5">
         <img class="w-full object-cover h-36" src="${data[i].images[0]}" alt="Masinlar"/>
-        <h1 class="text-md font-semibold m-2">${data[i].price} ${data[i].currency}, ${data[i].brand}</h1>
-        <h2 class="m-2 text-md">${data[i].model}</h2>
-        <h3 class="m-2 text-md">${data[i].year}</h3>
+        <h1 class="text-md font-semibold m-2">${data[i].price} ${data[i].currency},\</h1>
+        <h2 class="m-2 text-md">${data[i].brand}${data[i].model}</h2>
+        <h3 class="m-2 text-md">${data[i].year}  , ${data[i].engine}</h3>
         <h4 class="px-3 pb-5 text-sm text-gray-500">${data[i].city} ,${data[i].dates}</h4>
     </div>`
             
