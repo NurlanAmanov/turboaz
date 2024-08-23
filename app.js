@@ -1,6 +1,6 @@
 const data = [
     {
-      id: "1",
+     
       brand: "Abarth",
       model: "Seltos",
       banType: "Offroader / SUV",
@@ -9,7 +9,6 @@ const data = [
       price: 44000,
       currency: "AZN",
       year: "2005",
-      credit: false,
       engine: 1.5,
       images: [
         "https://turbo.azstatic.com/uploads/f710x568/2023%2F01%2F11%2F11%2F19%2F41%2F5f34c8eb-5138-4d0c-b78e-8c817d98aa5f%2F52522_Mu2ZZs1LqQkRDJpgK-R_xw.jpg",
@@ -18,7 +17,7 @@ const data = [
      dates: "Bu gün  14:30",
     },
     {
-      id: "2",
+     
       brand: "Audi",
       model: "A5",
       banType: "Sedan",
@@ -819,7 +818,6 @@ const data = [
       price: 60000,
       currency: "EUR",
       year: "2020",
-      credit: true,
 
       engine: 1.5,
       images: [
@@ -830,13 +828,18 @@ const data = [
     },
   ]
         let cards = document.querySelector(".cards")
+        const menubars=document.getElementById("menubars")
+
+      
         for (let i = 0; i < data.length; i++) {
-            container.innerHTML += `  <div class="card overflow-hidden w-44 o h-38 min-h-72 rounded-xl bg-white  pb-3.5">
+            container.innerHTML += `  <div class="card overflow-hidden w-48  o h-40 min-h-80 rounded-xl bg-white  pb-3.5">
         <img class="w-full object-cover h-36" src="${data[i].images[0]}" alt="Masinlar"/>
-        <h1 class="text-md font-semibold m-2">${data[i].price} ${data[i].currency},\</h1>
-        <h2 class="m-2 text-md">${data[i].brand}${data[i].model}</h2>
-        <h3 class="m-2 text-md">${data[i].year}  , ${data[i].engine}</h3>
-        <h4 class="px-3 pb-5 text-sm text-gray-500">${data[i].city} ,${data[i].dates}</h4>
+        <h1 class="text-lg font-bold m-2">${data[i].price} ${data[i].currency}</h1>
+        <h2 class="m-2 text-lg font-bold ">${data[i].brand} ${data[i].model}</h2>
+        <h3 class="m-2 text-md  ">${data[i].year}, 2.3L  ,${data[i].odometer} ${data[i].odometerUnit}</h3>
+        <h4 class="px-2 pb-5 text-mf text-gray-500">${data[i].city} ,${data[i].dates}</h4>
     </div>`
             
         }
+
+        
