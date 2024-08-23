@@ -832,12 +832,12 @@ const data = [
 
       
         for (let i = 0; i < data.length; i++) {
-            container.innerHTML += `  <div class="card overflow-hidden w-40  h-40 min-h-80 rounded-xl bg-white  pb-3.5">
+            container.innerHTML += `  <div class="card overflow-hidden w-44 text-start  h-40 min-h-80 rounded-xl bg-white  pb-3.5">
         <img class="w-full object-cover h-36" src="${data[i].images[0]}" alt="Masinlar"/>
         <h1 class="text-lg font-bold m-2">${data[i].price} ${data[i].currency}</h1>
-        <h2 class="m-2 text-lg font-bold ">${data[i].brand} ${data[i].model}</h2>
+        <h2 class="m-2 text-md font-bold ">${data[i].brand} ${data[i].model}</h2>
         <h3 class="m-2 text-md  ">${data[i].year}, 2.3L  ,${data[i].odometer} ${data[i].odometerUnit}</h3>
-        <h4 class="px-2 pb-5 text-mf text-gray-500">${data[i].city} ,${data[i].dates}</h4>
+        <h4 class="px-3 pb-7  text-ms text-gray-500">${data[i].city} ,${data[i].dates}</h4>
     </div>`
             
         }
