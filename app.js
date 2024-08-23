@@ -831,7 +831,7 @@ const data = [
   ]
         let cards = document.querySelector(".cards")
         for (let i = 0; i < data.length; i++) {
-            container.innerHTML += `  <div class="card overflow-hidden w-48 o h-36 min-h-72 rounded-xl bg-white  border border-gray-600 pb-3.5">
+            container.innerHTML += `  <div class="card overflow-hidden w-48 o h-38 min-h-72 rounded-xl bg-white  border border-gray-600 pb-3.5">
         <img class="w-full object-cover h-36" src="${data[i].images[0]}" alt="Masinlar"/>
         <h1 class="text-md font-semibold m-2">${data[i].price} ${data[i].currency}, ${data[i].brand}</h1>
         <h2 class="m-2 text-md">${data[i].model}</h2>
