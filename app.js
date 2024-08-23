@@ -832,7 +832,7 @@ const data = [
 
       
         for (let i = 0; i < data.length; i++) {
-            container.innerHTML += `  <div class="card overflow-hidden w-48  o h-40 min-h-80 rounded-xl bg-white  pb-3.5">
+            container.innerHTML += `  <div class="card overflow-hidden w-40  h-40 min-h-80 rounded-xl bg-white  pb-3.5">
         <img class="w-full object-cover h-36" src="${data[i].images[0]}" alt="Masinlar"/>
         <h1 class="text-lg font-bold m-2">${data[i].price} ${data[i].currency}</h1>
         <h2 class="m-2 text-lg font-bold ">${data[i].brand} ${data[i].model}</h2>
