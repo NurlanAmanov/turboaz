@@ -35,7 +35,7 @@
         </div>
         <div class="old-bar-btm flex items-center justify-between bg-[#ca1016] gap-2 w-full py-2">
             <div class="old-bar-head flex items-center ml-12 justify-center">
-                <h1 class="text-xl uppercase text-white font-bold">Turbo.az</h1>
+               <a href="index.htm"> <h1  class="text-xl uppercase text-white font-bold">Turbo.az</h1></a>
             </div>
             <div class="kataloq flex items-center justify-center gap-3 ml-12">
                 <a href="" class="font-arial text-base ml-2 text-[#fff] hover:text-[#ccc]">Bütün elanlar</a>
@@ -55,9 +55,9 @@
         </div>
     </header>
     <main>
-        <div class="old-filtr  flex items-center justify-center text-center w-full p-2 gap-4">
+        <div class="old-filtr  flex items-center justify-center text-center w-full p-3 gap-4">
             <div class="filtr1 pt-3 flex items-start justify-start flex-col gap-2">
-                <select id="markaselecet" class="w-full p-2 outline-none" style="border-radius: 7px;">
+                <select id="markaselecet" onchange="markaChanged()" class="w-full p-2 outline-none" style="border-radius: 7px;">
                 
 
                 </select>
@@ -103,9 +103,9 @@
                 </select>
 
             </div>
-            <div class="filtr2 pt-3  flex items-start justify-start flex-col gap-2">
-                <select id="city" class="w-full p-2 text-[#8d94ad] outline-none" style="border-radius: 7px;">
-                    <option class="w-full text-[#8d94ad] outline-none" value="#">Şəhər</option>
+            <div class="filtr2 p-3  flex items-start justify-start flex-col gap-2">
+                <select id="city" onchange="cityChanged()" class="w-full p-2 text-[#8d94ad] outline-none" style="border-radius: 7px;">
+                   
 
                 </select>
                 <div class="filtr-text flex items-center justify-center flex-row gap-2 ">
@@ -135,7 +135,7 @@
 
                 <div class="desktop flex items-center justify-between w-full gap-2.5  ">
                     <div class="dekstop-menu  flex items-center justify-around flex-row w-1/5 gap-2.5 ">
-                        <a href="#">
+                        <a href="index.htm">
                             <h1 class="text-lg uppercase  font-bold  no-underline font-arial text-[#ca1016]">Turbo.az
                             </h1>
 
@@ -162,7 +162,7 @@
                 <form class="w-11/12 bg-white px-4 shadow-[#0000000a]  py-2  rounded-t-xl rounded-bl-xl rounded-br-xl ">
                     <span class="ml-px font-arial  text-[#212c3a] text-sm"> <i
                             class="fa-solid fa-car text-[#ca1016] text-lg mx-2"></i>Bütün markalar</span>
-                    <select id="markaselecetmbil" class="m-0.5 border-none outline-none  text-[#B1B5C7]">
+                    <select id="markaselecetmbil" onchange="markaChanged()" class="m-0.5 border-none outline-none  text-[#B1B5C7]">
 
 
                     </select>
@@ -202,9 +202,9 @@
                 <a href="#" class="text-lg border-b-2 border-b-neutral-500">İcarə</a>
             </div>
             <div class="premium-elan bg-[#f1f3f7] p-3 uppercase w-full flex items-start justify-start font-bold border-t border-b border-[#eaebf2]">
-                <h3>Premium Elanlar</h3>
+                <h3 class="p-2">Premium Elanlar</h3>
             </div>
-            <div id="container"class=" elan flex items-center justify-center bg-[#eee] flex-row w-full p-1 gap-2 flex-wrap ">
+            <div id="container"class=" elan flex items-center justify-center bg-[#eee] flex-row w-full p-2 gap-2 flex-wrap ">
 
             </div>
 

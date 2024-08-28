@@ -11,6 +11,7 @@
 .header { display: block!important;}
 .old-header,.old-filtr,.filt3-botm,.footer-old  {display: none!important;}
 
+
 @media only screen and (min-width: 768px) {
     .old-filtr{display: flex!important; }
 .menu-bar {display: none!important;}

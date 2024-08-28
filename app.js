@@ -873,16 +873,64 @@ const bantyape = Array.from(bantyp)
 const deyisvalyuta = Array.from(valyuta)
 const markamobil=Array.from(mobilmark)
 
-
 function addmobilmark() {
+  const markaselecetmbil = document.getElementById('markaselecetmbil');
   markaselecetmbil.innerHTML = '';
+
   for (let j = 0; j < markamobil.length; j++) {
-    markaselecetmbil.innerHTML += `<option>${markamobil[j]}</option>`
+    markaselecetmbil.innerHTML += `<option value="${markamobil[j]}">${markamobil[j]}</option>`;
   }
 
-
+  markaselecetmbil.addEventListener('change', function () {
+    const selectedMarka = markaselecetmbil.value;
+    showcar(selectedMarka);
+  });
 }
-addmobilmark()
+
+function addmarkalar() {
+  const markaselecet = document.getElementById('markaselecet');
+  const modelselecet = document.getElementById('modelselecet');
+
+  modelselecet.innerHTML = '';
+  markaselecet.innerHTML = '';
+
+  for (let j = 0; j < marka.length; j++) {
+    markaselecet.innerHTML += `<option value="${marka[j]}">${marka[j]}</option>`;
+    modelselecet.innerHTML += `<option>${model[j]}</option>`;
+  }
+
+  markaselecet.addEventListener('change', function () {
+    const selectedMarka = markaselecet.value;
+    showcar(selectedMarka);
+  });
+}
+
+function showcar(selectedMarka) {
+  const container = document.getElementById('container');
+  container.innerHTML = '';
+
+  const filteredData = selectedMarka
+    ? data.filter(item => item.brand === selectedMarka)
+    : data;
+
+  filteredData.map(item => {
+    const showcarlar = document.createElement('div');
+    showcarlar.className = 'elan', 'overflow-hidden min-w-2/5 max-w-52 text-start h-40 min-h-80 rounded-xl bg-white pb-3.5';
+    showcarlar.innerHTML = `
+      <div class="card overflow-hidden min-w-2/5 max-w-52 text-start h-40 min-h-80 rounded-xl bg-white pb-3.5">
+        <img class="w-full object-cover h-36" src="${item.images[0]}" alt="Masinlar"/>
+        <h1 class="text-lg font-bold m-2">${item.price} ${item.currency}</h1>
+        <h2 class="m-2 text-md font-bold ">${item.brand} ${item.model}</h2>
+        <h3 class="m-2 text-sm">${item.year}, 2.3L, ${item.odometer} ${item.odometerUnit}</h3>
+        <h4 class="px-3 pb-7 text-ms text-gray-500">${item.city}, ${item.dates}</h4>
+      </div>`;
+    container.appendChild(showcarlar);
+  });
+}
+
+
+addmarkalar(); 
+addmobilmark();
 
 function addvalyuta() {
   exchange.innerHTML = '';
@@ -912,7 +960,9 @@ function addcity() {
 
 
 }
+
 addcity()
+
 
 
 function addmarkalar() {
@@ -924,27 +974,28 @@ function addmarkalar() {
 
   for (let j = 0; j < marka.length; j++) {
     markaselecet.innerHTML += `<option value="${marka[j]}">${marka[j]}</option>`;
+    modelselecet.innerHTML+= `<option>${model[j]}</option>`
   }
 
   markaselecet.addEventListener('change', function () {
     const selectedMarka = markaselecet.value;
 
-    // Seçildikdən sonra uyğun avtomobilləri göstərmək üçün
+
     showcar(selectedMarka);
   });
 }
 
 function showcar(selectedMarka) {
   const container = document.getElementById('container');
-  container.innerHTML = ''; // Əvvəlki məzmunu təmizləyirik
+  container.innerHTML = '';
 
   const filteredData = data.filter(item => item.brand === selectedMarka);
 
-  filteredData.forEach(item => {
+  filteredData.map(item => {
     const showcarlar = document.createElement('div');
     showcarlar.className = 'elan';
     showcarlar.innerHTML = `
-      <div class="card overflow-hidden w-2/5 max-w-52 text-start h-40 min-h-80 rounded-xl bg-white pb-3.5">
+      <div class="card overflow-hidden min-w-2/5 max-w-52 text-start h-40 min-h-80 rounded-xl bg-white pb-3.5">
         <img class="w-full object-cover h-36" src="${item.images[0]}" alt="Masinlar"/>
         <h1 class="text-lg font-bold m-2">${item.price} ${item.currency}</h1>
         <h2 class="m-2 text-md font-bold ">${item.brand} ${item.model}</h2>
@@ -954,8 +1005,6 @@ function showcar(selectedMarka) {
     container.appendChild(showcarlar);
   });
 }
-
-// İlk olaraq markaları göstəririk
 addmarkalar();
 
 
