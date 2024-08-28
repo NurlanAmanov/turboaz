@@ -57,25 +57,25 @@
     <main>
         <div class="old-filtr  flex items-center justify-center text-center w-full p-2 gap-4">
             <div class="filtr1 pt-3 flex items-start justify-start flex-col gap-2">
-                <select class="w-full p-2" style="border-radius: 7px;">
-                    <option class="" value="#">Abarth</option>
-                    <option value="#">Acura</option>
+                <select id="markaselecet" class="w-full p-2 outline-none" style="border-radius: 7px;">
+                
+
                 </select>
                 <div class="filtr-text ">
-                    <input type="text" style="border-radius: 7px;" class="text-[#8d94ad] h-9 p-2  w-28"
+                    <input type="text" style="border-radius: 7px;" class=" outline-none  text-[#8d94ad] h-9 p-2  w-28"
                         placeholder="Qiymət,min">
-                    <input type="text" style="border-radius: 7px;" class="text-[#8d94ad] h-9 p-2  w-28"
+                    <input type="text" style="border-radius: 7px;" class= " outline-none text-[#8d94ad] h-9 p-2  w-28"
                         placeholder="Qiymət,max">
                 </div>
             </div>
             <div class="filtr2 pt-3  flex items-start justify-start flex-col gap-2">
-                <select class="w-full p-2" style="border-radius: 7px;">
-                    <option class="w-full" value="#">Model</option>
-                    <option value="#">Acura</option>
+                <select id="modelselecet"  class="w-full p-2 outline-none" style="border-radius: 7px;">
+                    
+
                 </select>
                 <div class="filtr-text flex items-center justify-center flex-row gap-2 ">
-                    <select style="border-radius: 7px;" class="text-[#8d94ad] h-9 p-2 " placeholder="Qiymət,min">
-                        <option value="">AZN</option>
+                    <select id="exchange" style="border-radius: 7px;" class="text-[#8d94ad] h-9 p-2 outline-none" placeholder="Qiymət,min">
+                      
                     </select>
                     <a href=""
                         class="flex items-center justify-center w-20  bg-[#fff] py-2 gap-3 px-2 rounded-md h-[40px] text-[#8d94ad text-md font-500"
@@ -90,32 +90,32 @@
                     <a href=""
                         class="flex items-center justify-center w-20  bg-[#ca1016] py-2 gap-3 px-2 rounded-md h-[40px] text-[#fff] text-md font-500"
                         style="border-radius: 7px;">Hamısı</a>
-                    <a href=""
-                        class="flex items-center justify-center w-20  bg-[#fff] py-2 gap-3 px-2 rounded-md h-[40px] text-[#8d94ad] text-md font-500"
+                    <a onclick="yenideyis()" id="yeni" href=""
+                        class="flex items-center yeni justify-center w-20  bg-[#fff] py-2 gap-3 px-2 rounded-md h-[40px] text-[#8d94ad] text-md font-500"
                         style="border-radius: 7px;">Yeni</a>
-                    <a href=""
+                    <a  onclick="sur()" id="surulumus" href=""
                         class="flex items-center justify-center w-20 bg-[#fff]  gap-3 px-2 rounded-md h-[40px] text-[#8d94ad] text-md font-500"
                         style="border-radius: 7px;">Sürülmüş</a>
                 </div>
-                <select class="w-full p-2 text-[#8d94ad]" style="border-radius: 7px;">
+                <select id="bannov" class="w-full p-2 text-[#8d94ad] outline-none" style="border-radius: 7px;">
                     <option class="w-full text-[#8d94ad]" value="#">Ban növü</option>
-                    <option value="#">Acura</option>
+
                 </select>
 
             </div>
             <div class="filtr2 pt-3  flex items-start justify-start flex-col gap-2">
-                <select class="w-full p-2 text-[#8d94ad]" style="border-radius: 7px;">
-                    <option class="w-full text-[#8d94ad]" value="#">Şəhər</option>
-                    <option value="#">Acura</option>
+                <select id="city" class="w-full p-2 text-[#8d94ad] outline-none" style="border-radius: 7px;">
+                    <option class="w-full text-[#8d94ad] outline-none" value="#">Şəhər</option>
+
                 </select>
                 <div class="filtr-text flex items-center justify-center flex-row gap-2 ">
-                    <select class="w-full p-2 text-[#8d94ad]" style="border-radius: 7px;">
-                        <option class="w-full text-[#8d94ad]" value="#">il,min</option>
-                        <option value="#">Acura</option>
+                    <select id="years" class="w-full p-2 text-[#8d94ad] outline-none" style="border-radius: 7px;">
+                        <option class="w-full text-[#8d94ad] outline-none" value="#">il,min</option>
+    
                     </select>
-                    <select class="w-full p-2  text-[#8d94ad]" style="border-radius: 7px;">
-                        <option class="w-full text-[#8d94ad]" value="#">il,max</option>
-                        <option value="#">Acura</option>
+                    <select class="w-full p-2  text-[#8d94ad] outline-none" style="border-radius: 7px;">
+                        <option class="w-full text-[#8d94ad] outline-none" value="#">il,max</option>
+                   
                     </select>
                 </div>
 
@@ -162,10 +162,8 @@
                 <form class="w-11/12 bg-white px-4 shadow-[#0000000a]  py-2  rounded-t-xl rounded-bl-xl rounded-br-xl ">
                     <span class="ml-px font-arial  text-[#212c3a] text-sm"> <i
                             class="fa-solid fa-car text-[#ca1016] text-lg mx-2"></i>Bütün markalar</span>
-                    <select class="m-0.5 border-none outline-none  text-[#B1B5C7]">
-                        <option class="mx-2 border-none outline-none text-[#B1B5C7]" value="">G 63 AMG</option>
-                        <option class="mx-2 border-none outline-none  text-[#B1B5C7]" value="">Tundra</option>
-                        <option class="mx-2 border-none outline-none text-[#B1B5C7] " value=" ">S 600</option>
+                    <select id="markaselecetmbil" class="m-0.5 border-none outline-none  text-[#B1B5C7]">
+
 
                     </select>
                     <div

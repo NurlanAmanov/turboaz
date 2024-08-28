@@ -12,6 +12,7 @@
 .old-header,.old-filtr,.filt3-botm,.footer-old  {display: none!important;}
 
 @media only screen and (min-width: 768px) {
+    .old-filtr{display: flex!important; }
 .menu-bar {display: none!important;}
 .header,.filtir,.banner-bot,.footercontent { display: none!important;}
 .old-header,.footer-old {display: block!important;}}
